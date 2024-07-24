@@ -4,7 +4,9 @@
   "description": "backend for page content manager",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docker": "docker-compose up -d",
+    "dir": "(mkdir public && mkdir public/files && mkdir public/files/photos && mkdir public/files/temp)",
+    "local": "(bash scripts/env.sh && nodemon src/server.js)"
   },
   "author": "adrian",
   "license": "ISC",
